@@ -1,0 +1,36 @@
+// Design Tokens & Color Palette
+:root {
+  --bg: #111110;
+  --panel: #191918;
+  --panel-elevated: #212120;
+  --panel-glass: rgba(25, 25, 24, 0.72);
+  --ink: #f2f0e9;
+  --muted: #96948d;
+  --copper: #e8ab7e;
+  --copper-glow: rgba(232, 171, 126, 0.25);
+  --copper-dim: rgba(232, 171, 126, 0.08);
+  --line: rgba(244, 236, 222, 0.13);
+  --line-strong: rgba(244, 236, 222, 0.24);
+
+  // Fonts
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  // Spacing & Layout
+  --header-height: 72px;
+  --max-width: 1320px;
+  --content-padding: clamp(1.25rem, 4vw, 3rem);
+
+  // Transitions
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-normal: 400ms;
+  --duration-slow: 700ms;
+}
+
+$bg: var(--bg);
+$panel: var(--panel);
+$ink: var(--ink);
+$muted: var(--muted);
+$copper: var(--copper);
+$line: var(--line);

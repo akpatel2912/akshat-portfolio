@@ -1,0 +1,74 @@
+@use './variables' as *;
+
+@media (max-width: 1024px) {
+  .engineering-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .editor-wrap {
+    position: relative;
+    top: 0;
+  }
+
+  .skills-figures-row {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+
+    .timeline-intro {
+      position: relative;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: calc(var(--header-height) + 1rem);
+  }
+
+  .hero-quick-roles {
+    gap: 1rem;
+  }
+
+  .assembly-sticky {
+    padding: calc(var(--header-height) + 0.5rem) 1rem 1.5rem;
+  }
+
+  .assembly-browser {
+    .browser-viewport {
+      min-height: 340px;
+    }
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-figures-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-channels {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    .project-art {
+      aspect-ratio: 1;
+    }
+  }
+
+  .assembly-top {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+}
